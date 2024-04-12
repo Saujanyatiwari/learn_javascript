@@ -21,10 +21,10 @@ let name = "abc"
  const heros = ["ironman" , "scarlet_witch" ,"hawkeye"];
 
  let myobj = {
-    name : "abc",
-    age : 18,
- }
-
+    name : "abc"
+    age : 18
+ }// its is an object which are always written in key valye pair
+console.log(myobj)
 const myfunctin = function(){
     console.log("hello world")
 }

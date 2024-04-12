@@ -1,0 +1,41 @@
+.canvas{
+    background-color: #ffe4c4;
+  }
+  
+  .heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #theme-chooser{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 250px;
+    margin-top:  50px;
+  }
+  
+  #dark{
+    background-color: rgb(47, 46, 46);
+    color: whitesmoke;
+  }
+  
+  #light{
+    background-color: rgb(237, 234, 234);
+  }
+
+  #original{
+    background-color: rgb(233, 117, 117);
+    color: whitesmoke;
+  }
+
+  
