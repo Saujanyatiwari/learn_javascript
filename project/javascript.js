@@ -3,11 +3,11 @@ const body = document.querySelector( 'body' );
 const heading = document.querySelector('h1'); 
 
 buttons.forEach((button) => {
-    /* console.log(button); */
+    console.log(button);
 
     button.addEventListener('click' , (e) => {
-        // console.log(e);
-        // console.log(e.target);
+        console.log(e);
+        console.log(e.target);
         console.log(e.target.id);
 
         if(e.target.id === 'dark'){
