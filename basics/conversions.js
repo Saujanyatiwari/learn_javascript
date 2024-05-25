@@ -20,3 +20,4 @@ let names = String(stringname)
 
 console.log(typeof booleanLog);
 console.log(typeof names)
+console.log(booleanLog)

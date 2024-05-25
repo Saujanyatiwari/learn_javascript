@@ -1,18 +1,19 @@
 "use strict"; //treat all js code as newer version
 
-//alert(3+3) // used not browser not on node.js
+//alert(3+3) // on node-js it has different syntax this will work on browser
 
 let name ="saujanya"
 let age = 18
 let female = true
 
-//datatypes
+//datatypes and its range 
 //number => 2 to the power 53
 //string => "saujanya"
 //bigint => for extremely large values
 //boolean => true/false
-// null
-//undefined
+// null => stand alone value
+//undefined => value not assigned yet 
+//symbol => helps in finding uniqueness
 
 //object
 
