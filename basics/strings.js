@@ -19,6 +19,9 @@ const gamename = new String("Saujanya")
 
 // various manipulations can be performend on string usng various methods
 
+
+//  console.log(gamename[6])
+//  console.log(gamename.__proto__)
 // console.log(gamename.length)
 // console.log(gamename.toLowerCase())
 // console.log(gamename.toUpperCase())
@@ -27,3 +30,25 @@ const gamename = new String("Saujanya")
 
 /* INDEXOF will return the first position of the element where ever  
 it comes even if it occurs more than one time */
+
+let s = "teadybear"
+
+// console.log(s.substring( 1, 5))
+// console.log(s.slice(0 , 3))
+
+/* slice works on negative values also whereas substring 
+dont comsider negative values and neglects the negative sign*/
+
+let x = "     abcd    "
+
+// console.log(x.trim())
+
+
+let url = "https//wikipedia//human%20beings"
+
+// console.log(url.replace('%20' , '-'))
+// console.log(url.includes('human'))
+
+
+let sen = "I-am-saujanya-tiwari"
+console.log(sen.split('-'))
