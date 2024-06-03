@@ -35,4 +35,10 @@ jsuser.greetings = function(){
     console.log("hello user")
 }
 
-console.log(jsuser.greetings)
+console.log(jsuser.greetings())
+
+jsuser.greetingstwo = function(){
+    console.log(`hello user ${this.name}`)
+}
+
+console.log(jsuser.greetingstwo())
