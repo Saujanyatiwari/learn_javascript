@@ -29,4 +29,18 @@ const a = another_array.flat(Infinity)
 /* FLATMETHOD IS USSED TO CONVERT AT DEPTH TO A SINGLE ARRAY WITHOUT
  ANY SUBARRAYS INSIDE IT YOU CANA SLO DEFINE A DEPTH TO IT */
 
- console.log(Array.isArray("ironman"))
+//  console.log(Array.isArray("arr"))
+//  console.log(Array.from("Saujanya")) CONVERST THE GIVEN THING INTO THE ARRAY 
+
+
+// console.log(Array.from({name : "saujanya"})) 
+
+// EMPTY ARRAY COMES THE OUTPUT AS YOU NEED TO DEFINE WHETHER TO PRINT KEYS OR VALUES
+
+let x = 100
+let y = 200
+let z = 300
+
+// console.log(Array.of(x , y , z))
+
+//Of METHOD IS USED TO CREATE THE ARRAYUSINF SEPARATE VARIABLES 
