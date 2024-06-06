@@ -31,4 +31,43 @@ function userlogIn(name = "sun") {
     return `${name} just logged in`;
 }
 
-console.log(userlogIn("Saujanya"))
+// console.log(userlogIn("Saujanya"))
+
+/* function calculateCartPrice(...n1){
+    return n1;
+}
+
+console.log(calculateCartPrice(100 ,200 ,300 ,400)) */
+
+function calculateCartPrice(val1 , val2 , ...n1){
+    return n1;
+}
+
+// console.log(calculateCartPrice(100 ,200 ,300 ,400))
+
+
+const user = {
+    username: "Saujanya",
+    course : "cse"
+}
+
+function object(anyobject) {
+    console.log(`Name is ${anyobject.username} and Course is ${anyobject.course}`)
+}
+
+// object(user)
+
+/* object({
+    username: "ALISHA",
+    course:"eee"
+}) */
+
+    const array = [100, 200 , 300 , 400 , 500]
+
+    function arr (getarray) {
+        return getarray[1]
+    }
+
+    // console.log(arr(array))
+
+    console.log(arr([100,300,500,700]))
