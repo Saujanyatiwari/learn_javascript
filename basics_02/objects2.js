@@ -61,3 +61,24 @@ const users = [
 
 // console.log(snapchat.hasOwnProperty('name'))   RETURNS BOOLEAN
 
+
+const course ={
+    coursename : "learn javascript",
+    price: "999",
+    courseinstructor : "xyz"
+}
+
+
+// course.courseinstructor THIS ONE METHOD TO ACCESS THE VARIABLE OBJECT
+
+//ANOTHER METHOD
+
+const {courseinstructor : ins} = course
+console.log(ins)
+
+
+/* const navbar = ({company}) => {
+
+
+}
+navbar(company = "pqrs") */
