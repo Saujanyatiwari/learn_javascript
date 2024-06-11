@@ -25,3 +25,45 @@ if(useremailId.length === 0){
 } */
 
 
+
+/*
+ checking if object is empty
+
+const emptyoobj = {}
+
+if(Object.keys(emptyoobj).length === 0){
+    console.log("object is empty");
+} */
+
+
+/* 
+    WHEN ON CONSOLE OF BROWSER
+    false == 0  
+    false == ''
+    0 == ''
+    all the above give TRUE as an answer
+*/
+
+
+// nullish colaescing operator[??] : null  undefined
+
+let val1
+
+// val1 = 10 ?? 20
+// val1 = null ?? 30
+// val1 = undefined ?? 10
+// val1 = null ?? undefined => UNDEFINED OUTPUT
+// val1 = undefined ?? null  => NULL OUTPUT
+
+// val1 = null ?? 10 ?? 30 always takes the first number given
+
+// console.log(val1);
+
+
+//+++++++++++++++++++++TERNARY OPERATOR+++++++++++++++++++++
+
+// Condition ? true : false
+
+const price = 100
+
+price>80 ? console.log("above 80") : console.log("below 80");

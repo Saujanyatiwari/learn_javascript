@@ -60,7 +60,7 @@ else {
     console.log("above 1000")   
 }
 
-
+// logical operators :
 // &&  : works when both values should have true
 // || : works when any one value has to be true
 
