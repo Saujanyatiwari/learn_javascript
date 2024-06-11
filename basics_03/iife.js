@@ -3,11 +3,11 @@
 // HATANE KE LIYE HAMNE IIFE KA USE KARTE HAI
 // SUDDEN IMPLEMENTATION OCCURS
 
-(function one () {
+(function one () {      // NAMED IIFE
     console.log(`DB  CONNECTED`)
 })();
 
 
-(() => {
-    console.log(`DB connected to server`);
-})()
+((username) => {                                 // SIMPLE IIFE
+    console.log(`DB connected  ${username}`);
+})("saujanya")
