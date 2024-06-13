@@ -22,13 +22,21 @@
     </div>
 </body>
 <script>
-    const week = document.querySelectorAll('.parent')
-    console.log(week);
-    console.log(week.children);
-    console.log(week[1].innerHTML);
+    const parent= document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
 
-    for (let i = 0; i < week.children.length; i++) {
-        console.log(week.children[i].innerHTML);
-    }
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+
+    parent.children[1].style.color = "violet"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    const dayone = document.querySelector('.day')
+    console.log(dayone);
+
 </script>
 </html>
