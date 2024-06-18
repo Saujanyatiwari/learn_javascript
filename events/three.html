@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>async</title>
+    <style>
+        body{
+            background-color : #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT </h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+    const date = function(){
+         console.log( "hello",Date.now())
+    }
+     
+     let set;
+    const begin = document.getElementById('start').addEventListener('click',function(){
+        if(!set){
+        set = setInterval(date,1000)
+        }
+    })
+
+    const end = document.getElementById('stop').addEventListener('click',function(){
+       clearInterval(set)
+       set = null;
+    })
+
+</script>
+</html>

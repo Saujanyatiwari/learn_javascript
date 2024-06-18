@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>async</title>
+    <style>
+        body{
+            background-color : #414141;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>let us learn js</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+
+    const work = function(){
+        console.log("work")
+    }
+
+    const print = function(){
+        document.querySelector('h1').innerHTML ="Work hard to achieve you goal"
+    }
+    const change = setTimeout(print,5000)
+
+    const stopme = document.getElementById('stop').addEventListener('click', function(){
+        clearTimeout(change)
+        console.log('stopped');        
+    })
+</script>
+</html>
