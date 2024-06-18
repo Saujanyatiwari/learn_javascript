@@ -27,14 +27,39 @@
     //jQuery
 
     //PROPERTIES IN event listner
-    // type, timestamp, defaultPrevented
+    // type, timestamp, PreventDefault
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log(e)
-    },false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked")
+    //     e.stopPropagation();
+    // },false)
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("ul clicked")
+    // },false)
+
+    // when false given then bubbling occurs and flow goes from down to up
+    // when true written then  occurs and flow goes from top to down
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google clicked")
+    //     e.preventDefault()
+    // },false)
+
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG')
+            {
+                const removeIt = e.target.parentNode;
+                 removeIt.remove()
+            }
+       
+        },false)
+        // removeIt.parentNode.removeChild(removeIt)
 
 
 </script>
