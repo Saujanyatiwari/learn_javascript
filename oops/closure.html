@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+
+    //+++++++++++ LEXICAL SCOPE +++++++++++++++++++++
+
+    function outer(){
+        let username = "hitesh"
+        console.log("OUTER", secret);
+        function inner(){
+            let secret = "my123"
+            console.log("inner", username);
+        }
+        function innerTwo(){
+            console.log("innerTwo", username);
+            console.log(secret);
+        }
+        // inner()
+        // innerTwo()
+
+    }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+
+ // +++++++++++++++++++++++ CLOSURE +++++++++++++++++
+
+    function makeFunc() {
+        const name = "Mozilla";
+        function displayName() {
+            console.log(name);
+        }
+        return displayName;
+    }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+/*     when anything returned in function then whole outer+inner function is returned which  means 
+    the lexical scope is returned
+ */
+
+ </script>
+
+ <script>
+  
+
+   /*  document.querySelector('button').addEventListener('click', function(e) {
+        e.target;
+        if(e.target.id === 'orange'){
+            body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id === 'green'){
+            body.style.backgroundColor = e.target.id;
+        }
+    }) */
+
+
+    function colorchanger(color){
+
+        return function(){
+            document.body.style.backgroundColor =`${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = colorchanger("orange")
+    document.getElementById('green').onclick = colorchanger("green")
+
+ </script> 
+ </html>
+
+
